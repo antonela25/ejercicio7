@@ -1,0 +1,64 @@
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 10px 10px;
+
+  }
+
+   div{
+    padding: 4rem 2rem;
+    }
+
+
+    
+   .uno{
+    background-color:red ;
+     } 
+
+
+   .dos{
+    background-color:yellow;
+     }
+
+
+   .tres{
+    background-color:black ;
+     }
+
+ 
+
+
+    .cuatro{
+        background-color:blue ;
+     }
+    
+
+   .cinco{
+    background-color: orangered;
+     }
+
+
+
+   .seis{
+    background-color: palevioletred;
+     }
+
+
+  .siete{
+    background-color: blueviolet;
+     }
+    
+
+  .ocho{
+    background-color: green;
+     }
+   
+
+ .nueve{
+    background-color: gray;
+    }
+
+  
+
