@@ -1,64 +1,166 @@
 
-
+body{
+  min-height: 100vh;
+}
 .contenedor{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 10px 10px;
+    grid-template-columns: repeat(auto,3, 1fr);
+    grid-auto-rows: 200px;
+    grid-column-gap:2em;
+    grid-row-gap:2em;
+}
+/*pantalla pequña 3 box*/
+@media (max-width: 320px) {
 
-  }
 
-   div{
-    padding: 4rem 2rem;
-    }
-
-
-    
    .uno{
-    background-color:red ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: red;
      } 
 
-
    .dos{
-    background-color:yellow;
-     }
-
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: blue; 
+   }
 
    .tres{
-    background-color:black ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color:blueviolet;
      }
+    }
+/*pantalla mediana 6 box*/
+  @media (min-width: 320px) and (max-width: 768px) {
+      
+      
+      .uno{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: blueviolet;
+         } 
 
- 
+      .dos{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color:red; 
+         }
 
-
+      .tres{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color:blue;
+         }
+      
     .cuatro{
-        background-color:blue ;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: green;
+       }
+    
+    .cinco{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: yellow;
+        }
+
+    .seis{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: orangered;
+     }
+     }
+/*pantalla gande 9 box*/
+  @media (min-width: 769px) and (max-width: 1325px) {
+
+      .uno{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: blue;
+         } 
+
+      .dos{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: blueviolet; 
+         }
+
+      .tres{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color:red;
+       }
+      
+     .cuatro{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: yellow;
      }
     
-
-   .cinco{
+    .cinco{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     background-color: orangered;
      }
 
-
-
-   .seis{
-    background-color: palevioletred;
-     }
-
-
-  .siete{
-    background-color: blueviolet;
-     }
-    
-
-  .ocho{
+    .seis{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     background-color: green;
      }
+      
+    .siete{
+    grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: black;
+     }
+    
+    .ocho{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:pink;
+     }
    
-
- .nueve{
-    background-color: gray;
-    }
-
-  
-
+    .nueve{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: grey;
+ }
+}
